@@ -28,3 +28,4 @@ C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\obj\Debu
 C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\obj\Debug\net8.0\Tienda.CapaAdminPresentacion.pdb
 C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\obj\Debug\net8.0\Tienda.CapaAdminPresentacion.genruntimeconfig.cache
 C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\obj\Debug\net8.0\ref\Tienda.CapaAdminPresentacion.dll
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\obj\Debug\net8.0\Tienda.CapaAdminPresentacion.sourcelink.json

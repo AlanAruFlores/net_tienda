@@ -25,10 +25,6 @@
       "PackagePath": "staticwebassets\\assets\\img\\error-404-monochrome.svg"
     },
     {
-      "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
-    },
-    {
       "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
@@ -43,10 +39,6 @@
     {
       "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\js\\index.js",
       "PackagePath": "staticwebassets\\js\\index.js"
-    },
-    {
-      "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\lib\\bootstrap\\LICENSE",
