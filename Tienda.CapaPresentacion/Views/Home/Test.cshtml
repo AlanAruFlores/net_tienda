@@ -1,0 +1,34 @@
+﻿<!--
+  model String
+<h1>Model</h1>
+-->
+
+
+<!-- con el arroba podemos incrustar en el html codigo csharp -->
+@{
+    ViewBag.Contenido = "Esto es un contenido";
+    ViewBag.Lista = new int[] { 1, 2, 3, 4 };
+
+
+    Layout = ""; //Le saco el layout si no lo quiero usar
+ //   Layout = "~/Views/Shared/_Layout.cshtml"; Es el layout por defecto que pone en las vistas 
+}
+
+<h1>@ViewBag.Value</h1>
+<p>@ViewBag.Contenido</p>
+
+
+<ul>
+    <!--Foreach en una lista con codigo c# y html-->
+    @{
+        int total = 0 ;
+
+        foreach(int x in ViewBag.Lista)
+        {
+            <li>@x</li>
+            total += x;    
+        }
+
+        <p>@total</p>
+    }
+</ul>

@@ -5,12 +5,44 @@
       "PackagePath": "staticwebassets\\Tienda.CapaAdminPresentacion.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\assets\\demo\\chart-area-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\chart-area-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\assets\\demo\\chart-bar-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\chart-bar-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\assets\\demo\\chart-pie-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\chart-pie-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\assets\\demo\\datatables-demo.js",
+      "PackagePath": "staticwebassets\\assets\\demo\\datatables-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\assets\\img\\error-404-monochrome.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\error-404-monochrome.svg"
+    },
+    {
       "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
       "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\js\\datatables-simple-demo.js",
+      "PackagePath": "staticwebassets\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
     },
     {
       "Id": "C:\\Users\\Alan\\Desktop\\net_tienda\\TiendaMVC\\Tienda.CapaAdminPresentacion\\wwwroot\\js\\site.js",

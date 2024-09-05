@@ -18,6 +18,25 @@ namespace Tienda.CapaPresentacion.Controllers
             return View();
         }
 
+
+        /* Ejemplo de mandar argumentos a un get sin view bag
+        [HttpGet]
+        [Route("/test/page/{value}")]
+        public IActionResult Test(String value)
+        {
+            return View("Test", value);
+        }
+        */
+
+        /*Con view bag*/
+        [HttpGet]
+        [Route("/test/page/{value}")]
+        public IActionResult Test(String value)
+        {
+            ViewBag.Value = value;
+            return View("Test");
+        }
+
         public IActionResult Privacy()
         {
             return View();
