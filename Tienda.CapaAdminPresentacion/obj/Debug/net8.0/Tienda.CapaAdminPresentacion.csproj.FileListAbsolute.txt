@@ -29,3 +29,17 @@ C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\obj\Debu
 C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\obj\Debug\net8.0\Tienda.CapaAdminPresentacion.genruntimeconfig.cache
 C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\obj\Debug\net8.0\ref\Tienda.CapaAdminPresentacion.dll
 C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\obj\Debug\net8.0\Tienda.CapaAdminPresentacion.sourcelink.json
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\bin\Debug\net8.0\CapaDatos.dll
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\bin\Debug\net8.0\CapaEntidades.dll
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\bin\Debug\net8.0\CapaNegocio.dll
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\bin\Debug\net8.0\CapaNegocio.pdb
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\bin\Debug\net8.0\CapaDatos.pdb
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\bin\Debug\net8.0\CapaEntidades.pdb
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\obj\Debug\net8.0\Tienda.CapaAdminPresentacion.csproj.AssemblyReference.cache
+C:\Users\Alan\Desktop\net_tienda\TiendaMVC\Tienda.CapaAdminPresentacion\obj\Debug\net8.0\Tienda.C.12546BA0.Up2Date

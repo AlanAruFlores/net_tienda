@@ -1,0 +1,83 @@
+﻿@model JsonResult
+<h1 class="mt-4">Usuarios</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+    <li class="breadcrumb-item active">Usuarios</li>
+</ol>
+<div class="card mb-4">
+    <div class="card-body">
+        DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
+        <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
+        .
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        DataTable Example
+    </div>
+    <div class="card-body">
+        <table id="datatable">
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                </tr>
+            </thead>
+            <tbody >
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!--
+<ul>
+    //{
+        foreach(var item in Model)
+        {
+            <li>item.Nombres</li>
+        }
+    }
+</ul>-->
+
+<!--jquery ajax-->
+
+@section scripts{
+    <script>
+
+           
+        /*
+        jQuery.ajax({
+            url: 'Url.Action("UsuariosJson","Home")', //Toma l
+            type: 'GET',
+            dataType: 'json',
+            contentType: 'application/json',
+            success: function (data) {
+                console.log(data);
+            }
+
+        });
+        */
+
+       /*Cargamos el data table con los datos recibidos en la peticion ajax*/
+
+            
+            var datatable = $("#datatable").DataTable({
+                responsive: true,
+                ordering: false,
+                "ajax": {
+                    url: '@Url.Action("UsuariosJson", "Home")',
+                    type: 'GET',
+                    dataType: 'json',
+                    dataSrc: ''
+
+                },
+                "columns": [
+                    { "data": "nombres" },
+                    { "data": "apellidos" }
+                ]
+            });
+
+    </script>
+}

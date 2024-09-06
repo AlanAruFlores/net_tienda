@@ -8,8 +8,8 @@ namespace CapaEntidades
 {
     internal class Localidad
     {
-        public string IdLocalidad { get; set; }
-        public string IdProvincia { get; set; }
+        public int IdLocalidad { get; set; }
+        public int IdProvincia { get; set; }
         public string Descripcion { get; set; }
     }
 }
