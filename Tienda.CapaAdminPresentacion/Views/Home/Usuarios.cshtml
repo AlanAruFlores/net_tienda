@@ -6,28 +6,53 @@
 </ol>
 <div class="card mb-4">
     <div class="card-body">
-        DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
-        <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
-        .
+        Esta tabla muestra una lista de usuarios registrados en el sistema. Aquí puedes ver información básica sobre cada usuario, como nombre, correo electrónico y estado de la cuenta. Utiliza las opciones disponibles para gestionar, editar o eliminar usuarios según sea necesario.
     </div>
 </div>
 <div class="card mb-4">
-    <div class="card-header">
-        <i class="fas fa-table me-1"></i>
-        DataTable Example
+    <div class="card-header d-flex justify-content-between">
+        <div>
+            <i class="fas fa-users"></i>
+            Lista de Usuarios
+        </div>
+        <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Agregar
+        </button>
     </div>
-    <div class="card-body">
+    <div class="card-body table-responsive-xl table-responsive-md-l">
         <table id="datatable">
             <thead>
                 <tr>
                     <th>Nombres</th>
                     <th>Apellidos</th>
+                    <th>Correo</th>
+                    <th>Activo</th>
+                    <th></th>
                 </tr>
             </thead>
-            <tbody >
+            <tbody>
 
             </tbody>
         </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -75,8 +100,20 @@
                 },
                 "columns": [
                     { "data": "nombres" },
-                    { "data": "apellidos" }
-                ]
+                    { "data": "apellidos" },
+                    { "data": "correo"},
+                    { "data": "activo", "render": (data) => data == 1 ? '<span class="badge rounded-pill text-bg-success">Si</span>' : '<span class="badge rounded-pill text-bg-danger">No</span>' },
++                   { 
+                        "defaultContent": '<button type="button" class="btn btn-warning"><i class="bi bi-pencil-fill"></i></button> ' + ' <button type="button" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button>', //Contenido por defecto sin necesidad de una columns
+                        "orderable":false, //Que nose ordenen por el boton, ya que no tienen un dato
+                        "searchable":false, //Que no se aplice el filtro a los botones
+                        "width": "90px" //ancho
+                    }          
+                ],
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/2.1.5/i18n/es-AR.json', //Cambio el lenguaje de la tabla 
+                }
+               
             });
 
     </script>
