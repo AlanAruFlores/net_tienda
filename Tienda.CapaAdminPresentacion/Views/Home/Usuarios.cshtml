@@ -27,6 +27,7 @@
                     <th>Apellidos</th>
                     <th>Correo</th>
                     <th>Activo</th>
+                    <th>Reestablecer</th>
                     <th></th>
                 </tr>
             </thead>
@@ -40,21 +41,81 @@
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <form class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar nuevo usuario</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                ...
+            <div class="modal-body d-flex flex-column gap-2">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputValue1" placeholder="name@example.com" value="">
+                    <label for="floatingInputValue1">Nombre completo</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingInputValue2" placeholder="name@example.com" value="">
+                    <label for="floatingInputValue2">Apellido completo</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInputValue3" placeholder="name@example.com" value="">
+                    <label for="floatingInputValue3">Correo Electronico</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" aria-label="Activo" name="activo" id="floatingInputValue4">
+                        <option selected value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <label for="floatingInputValue4">Seleccione si esta activo</label>
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
             </div>
-        </div>
+        </form>
     </div>
 </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar nuevo usuario</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column gap-2">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="nombreEdit" placeholder="name" value="">
+                    <label for="nombreEdit">Nombre completo</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="apellidoEdit" placeholder="surname" value="">
+                    <label for="apellidoEdit">Apellido completo</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="correoEdit" placeholder="name@example.com" value="">
+                    <label for="correoEdit">Correo Electronico</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" aria-label="Activo" name="activo" id="activoEdit">
+                        <option selected value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <label for="activoEdit">Seleccione si esta activo</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<button id="prueba">prueba</button>
 
 <!--
 <ul>
@@ -69,7 +130,7 @@
 <!--jquery ajax-->
 
 @section scripts{
-    <script>
+    <script type="text/javascript">
 
            
         /*
@@ -87,7 +148,10 @@
 
        /*Cargamos el data table con los datos recibidos en la peticion ajax*/
 
-            
+       
+        $(document).ready(function () {
+
+            console.log("qwdqwd");
             var datatable = $("#datatable").DataTable({
                 responsive: true,
                 ordering: false,
@@ -101,20 +165,48 @@
                 "columns": [
                     { "data": "nombres" },
                     { "data": "apellidos" },
-                    { "data": "correo"},
+                    { "data": "correo" },
                     { "data": "activo", "render": (data) => data == 1 ? '<span class="badge rounded-pill text-bg-success">Si</span>' : '<span class="badge rounded-pill text-bg-danger">No</span>' },
-+                   { 
-                        "defaultContent": '<button type="button" class="btn btn-warning"><i class="bi bi-pencil-fill"></i></button> ' + ' <button type="button" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button>', //Contenido por defecto sin necesidad de una columns
-                        "orderable":false, //Que nose ordenen por el boton, ya que no tienen un dato
-                        "searchable":false, //Que no se aplice el filtro a los botones
+                    { "data": "reestablecer", "render": (data) => data == 1 ? '<span class="badge rounded-pill text-bg-success">Si</span>' : '<span class="badge rounded-pill text-bg-danger">No</span>' },
+                    {
+                        "defaultContent": '<button type="button" class="button-edit btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal" ><i class="bi bi-pencil-fill"></i></button >  ' + ' <button type="button" class="btn btn-danger btn-sm"><i class="bi bi-trash3-fill"></i></button>', //Contenido por defecto sin necesidad de una columns
+                        "orderable": false, //Que nose ordenen por el boton, ya que no tienen un dato
+                        "searchable": false, //Que no se aplice el filtro a los botones
                         "width": "90px" //ancho
-                    }          
+                    }
                 ],
                 language: {
-                    url: '//cdn.datatables.net/plug-ins/2.1.5/i18n/es-AR.json', //Cambio el lenguaje de la tabla 
+                    url: '//cdn.datatables.net/plug-ins/2.1.5/i18n/es-AR.json', //Cambio el lenguaje de la tabla
                 }
-               
             });
+
+
+            //Evento al boton
+            $("#datatable tbody").on("click", '.button-edit', function () {
+                let filaSeleccionada = $(this).closest("tr");
+                let dataRow = datatable.row(filaSeleccionada).data();
+                console.log(dataRow);
+                
+
+                let modalNombre = document.querySelector("#nombreEdit");
+                let modalApellido = document.querySelector("#apellidoEdit");
+                let modalCorreo = document.querySelector("#correoEdit");
+                let modalActivo = document.querySelector("#activoEdit");
+
+                modalNombre.value=dataRow.nombres;
+                modalApellido.value = dataRow.apellidos;
+                modalCorreo.value = dataRow.correo;
+                modalActivo.value = (dataRow.activo) ? "Si": "No";
+
+            });
+
+            $("#prueba").on("click", function () {
+                console.log("prueba");
+            });
+
+        });
+            
+
 
     </script>
 }

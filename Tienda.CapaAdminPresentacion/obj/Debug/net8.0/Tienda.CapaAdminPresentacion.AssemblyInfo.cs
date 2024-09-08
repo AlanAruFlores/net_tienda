@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tienda.CapaAdminPresentacion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cd27e35c161bab7ea8a6258e9845144bd3578e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+630543c16066ee32ace312beb9df21cedfb5b413")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tienda.CapaAdminPresentacion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tienda.CapaAdminPresentacion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
